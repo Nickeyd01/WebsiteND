@@ -144,6 +144,14 @@ section > div > p:last-of-type {
   text-align: justify;
 }
 
+.project-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -190,4 +198,27 @@ section > div > p:last-of-type {
     width: 100%;
     text-align: center;
   }
+}
+
+form {
+  max-width: 400px;
+  margin-top: 1em;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
 }
