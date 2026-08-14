@@ -1,134 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nicolas Dirnegger - Academic Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <h1>Nicolas Dirnegger</h1>
-            <h2>PhD Student at UCLA</h2>
-            <h3>Department of Electrical Engineering</h3>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <img src="images/profile_picture_400.jpg" alt="Image of Nicolas Dirnegger">
-            <p> 
-                <a href="mailto:nickeyd01@ucla.edu">Email</a>
-                <a href="files/Nicolas_Dirnegger_CV.pdf">CV</a>
-                <a href="https://www.linkedin.com/in/nicolas-dirnegger-aa8442100/">LinkedIn</a>
-                <a href="https://github.com/Nickeyd01">GitHub</a>
-                <a href="https://scholar.google.com/citations?user=d320d9EAAAAJ&hl=en">Scholar</a>
-            </p>
-        </header>
-        <nav class="tabs">
-            <button class="tab-button">Bio</button>
-            <button class="tab-button">Projects</button>
-            <button class="tab-button">Contact</button>
-        </nav>
-        <main>
-            <section id="Bio">
-                <h2>Biography</h2>
-                <p>
-                    I am a PhD student at UCLA in the Department of Electrical Engineering, where I work on quantum computing and quantum sensing with a focus on superconducting and optical devices. My research is supervised by Dr. Prineha Narang. I am interested in quantum networks, quantum transduction, and quantum communication. I have previously worked at IBM and AFRL on superconducting devices for quantum communication and networks.
-                </p>
-                <p>
-                    I completed my BSc in Electrical Engineering at ETH Zürich, where I worked on silicon nitride grating couplers for photonic integrated circuits. I also completed my MSc at UCLA in Physics, where I focused on mesoscopic optics and quantum electronics.
-                </p>
-            </section>
+<title>Nicolas Dirnegger — Quantum hardware &amp; quantum networks</title>
+<meta name="description" content="Nicolas Dirnegger is a PhD candidate in Electrical and Computer Engineering at UCLA, working on superconducting qubit hardware, quantum transduction, and entanglement distribution.">
+<link rel="canonical" href="https://nickeyd01.github.io/WebsiteND/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-            <section id="Projects">
-                <div>
-                    <h3>
-                        <a href="https://doi.org/10.48550/arXiv.2503.10842" target="_blank" rel="noopener noreferrer">
-                          Monte Carlo model of distilled remote entanglement between superconducting qubits across optical channels
-                        </a>
-                      </h3>
-                    <img class="project-image" src="images/remote_entanglement.png" alt="Remote Entanglement">
-                    <p>2025</p>
-                    <p>
-                        A promising quantum computing architecture comprises modules of superconducting quantum processors linked by optical channels via quantum transducers. 
-                        To map transducer device performance to system-level channel performance, our model uses Monte Carlo simulations that incorporate 2-to-1 and 3-to-1 entanglement distillation protocols. 
-                        We show that the Extreme Photon Loss distillation protocol is particularly high performing and that, even without distillation, present-day transducers are at the threshold of enabling Bell pair distribution with fidelities of 50%. 
-                        If the next generation of transducers can improve by 3 orders of magnitude in both added noise and efficiency, and increase repetition rates by 50x, then they would allow for remote two-qubit gates achieving 99.7% fidelities at 100 kHz rates. 
-                        These results set targets for transducers to be ready for deployment into scaled superconducting quantum computers.
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        <a href="https://doi.org/10.48550/arXiv.2408.07118" target="_blank" rel="noopener noreferrer">
-                          Efficient Multiparty Entanglement Distribution with DODAG-X Protocol
-                        </a>
-                      </h3>
-                    <img class="project-image" src="images/dodag_x.png" alt="DODAG-X Protocol">
-                    <p>2024</p>
-                    <p>
-                        In this work we introduce the DODAG-X protocol for multipartite entanglement distribution in quantum networks. 
-                        Leveraging the power of Destination Oriented Directed Acyclic Graphs (DODAGs), our protocol optimizes resource 
-                        consumption and enhances robustness to noise in dynamic and lossy networks. Implementing a variation on the X-protocol 
-                        within the DODAG, we minimize graph verification and path-finding calculations, significantly reducing computational 
-                        overhead when compared to other entanglement routing schemes. Additionally, our benchmarks on grid lattice and small-world 
-                        topologies reveal substantial measurement reduction compared to existing protocols. We demonstrate the success of DODAG-X 
-                        for generating maximal three-party entanglement in arbitrary networks, and describe the potential for scaling to generic 
-                        n-party entanglement. The DODAG-X protocol provides a scalable and efficient solution for entanglement routing, advancing 
-                        current techniques for reliable quantum communication and network applications.
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        <a href="https://doi.org/10.1021/acsphotonics.3c00834" target="_blank" rel="noopener noreferrer"> 
-                        Design of an Efficient Silicon Nitride Grating Coupler
-                        </a>
-                    </h3>
-                    <img class="project-image" src="images/grating_coupler.png" alt="Grating Coupler">
-                    <p>2022</p>
-                    <p>
-                        This project was conducted as part of my Bachelor Thesis at ETH Zurich during my last semester at the Institute of 
-                        Electromagnetic Fields under the supervision of Prof. Juerg Leuthold, Manuel Kohli and Boris Vukovic. The project 
-                        consisted of exploring the potential uses of silicon nitride as an alternative platform for photonic integrated circuits 
-                        as it shows tremendous promise due to low propagation losses, CMOS compatibility, and ability to handle high input power, 
-                        among others. The first fundamental challenge was to understand the coupling from optical fibers to the nano- and 
-                        microscale photonic waveguides. The thesis concentrated on the interface between fibers and integrated circuits so called 
-                        couplers, specifically grating couplers, and on how to make them more efficient. In this work, a silicon nitride based 
-                        grating coupler was demonstrated with a coupling efficiency below 0.5 dB using a back reflector. Using amorphous silicon 
-                        as overlay gratings, a 1-dB Bandwidth of 40 nm is achieved. The development of efficient coupling at the interface was 
-                        and remains a vital step to harness the full potential of photonic integrated circuits. That work was then subsequently published
-                        by my Bachelor supervisor Dr. Manuel Kohli and his team in the journal ACS Photonics. 
-                    </p>
-                </div>
-                <!-- <div>
-                    <h3>Science and Engineering Fair Project</h3>
-                    <img class="project-image" src="images/sciencefair.png" alt="Science Fair Project">
-                    <p>2018</p>
-                    <p>
-                        Science and Engineering Fair project during my high school years with Christina Henzinger. We built headphones capable 
-                        of generating electricity from temperature differences of environment and body using Peltier effect. Won Science Fair in 
-                        2018 in Vienna.
-                    </p>
-                </div> -->
-            </section>
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Nicolas Dirnegger — Quantum hardware &amp; quantum networks">
+<meta property="og:description" content="PhD candidate at UCLA working on superconducting qubit hardware, quantum transduction, and entanglement distribution.">
+<meta property="og:image" content="https://nickeyd01.github.io/WebsiteND/images/profile_picture_800.jpg">
+<meta property="og:url" content="https://nickeyd01.github.io/WebsiteND/">
+<meta name="twitter:card" content="summary">
 
-            <section id="Contact">
-                <h2>Contact Me</h2>
-                <form action="https://formspree.io/f/xpwpyqye" method="POST">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
-            
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="_replyto" required><br><br>
-            
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
-            
-                    <button type="submit">Send</button>
-                </form>
-            </section>
-            
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
 
+<a class="skip" href="#main">Skip to content</a>
 
-                    
-        </main>
-    </body>
+<header class="hero">
+  <div class="hero__inner">
+    <p class="eyebrow">Electrical &amp; Computer Engineering &middot; UCLA</p>
+    <h1>Nicolas Dirnegger</h1>
+    <p class="hero__role">
+      I build superconducting quantum hardware and the theory that tells us
+      what it will do once it is wired into a network.
+    </p>
+
+    <nav class="quicklinks" aria-label="Profiles and contact">
+      <a href="mailto:nickeyd01@ucla.edu">Email</a>
+      <a href="files/Nicolas_Dirnegger_CV.pdf">CV<span class="pdf">PDF</span></a>
+      <a href="https://scholar.google.com/citations?user=d320d9EAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+      <a href="https://orcid.org/0000-0002-5793-4205" target="_blank" rel="noopener noreferrer">ORCID</a>
+      <a href="https://github.com/Nickeyd01" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/nicolas-dirnegger-aa8442100/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+  </div>
+
+  <figure class="trace" aria-labelledby="trace-cap">
+    <svg viewBox="0 0 1200 150" preserveAspectRatio="none" role="img"
+         aria-label="A microwave transmission spectrum showing two resonance dips of unequal depth.">
+      <path class="trace__line" d="M0.0 19.4 L7.1 19.5 L14.1 19.5 L21.2 19.6 L28.2 19.6 L35.3 19.7 L42.4 19.7 L49.4 19.8 L56.5 19.9 L63.5 19.9 L70.6 20.0 L77.6 20.1 L84.7 20.1 L91.8 20.2 L98.8 20.3 L105.9 20.4 L112.9 20.5 L120.0 20.6 L127.1 20.7 L134.1 20.8 L141.2 20.9 L148.2 21.0 L155.3 21.2 L162.4 21.3 L169.4 21.5 L176.5 21.7 L183.5 21.9 L190.6 22.1 L197.6 22.3 L204.7 22.5 L211.8 22.8 L218.8 23.1 L225.9 23.4 L232.9 23.7 L240.0 24.1 L247.1 24.5 L254.1 25.0 L261.2 25.5 L268.2 26.1 L275.3 26.7 L282.4 27.5 L289.4 28.3 L296.5 29.2 L303.5 30.3 L310.6 31.6 L317.6 33.0 L324.7 34.7 L331.8 36.7 L338.8 39.1 L345.9 41.8 L352.9 45.2 L360.0 49.2 L367.1 53.9 L374.1 59.7 L381.2 66.5 L388.2 74.5 L395.3 83.7 L402.4 93.5 L409.4 103.1 L416.5 111.2 L423.5 116.0 L430.6 116.4 L437.6 112.2 L444.7 104.6 L451.8 95.3 L458.8 85.6 L465.9 76.5 L472.9 68.6 L480.0 61.8 L487.1 56.1 L494.1 51.4 L501.2 47.5 L508.2 44.3 L515.3 41.7 L522.4 39.6 L529.4 37.8 L536.5 36.4 L543.5 35.2 L550.6 34.2 L557.6 33.5 L564.7 32.9 L571.8 32.5 L578.8 32.2 L585.9 32.0 L592.9 32.0 L600.0 32.1 L607.1 32.3 L614.1 32.6 L621.2 33.1 L628.2 33.7 L635.3 34.5 L642.4 35.5 L649.4 36.7 L656.5 38.1 L663.5 39.7 L670.6 41.7 L677.6 44.1 L684.7 46.8 L691.8 50.0 L698.8 53.7 L705.9 57.9 L712.9 62.7 L720.0 67.8 L727.1 73.2 L734.1 78.4 L741.2 83.0 L748.2 86.3 L755.3 87.9 L762.4 87.4 L769.4 85.0 L776.5 81.0 L783.5 76.0 L790.6 70.5 L797.6 65.0 L804.7 59.8 L811.8 55.1 L818.8 50.9 L825.9 47.2 L832.9 44.0 L840.0 41.2 L847.1 38.8 L854.1 36.7 L861.2 34.9 L868.2 33.3 L875.3 31.9 L882.4 30.7 L889.4 29.6 L896.5 28.7 L903.5 27.9 L910.6 27.1 L917.6 26.5 L924.7 25.9 L931.8 25.4 L938.8 24.9 L945.9 24.4 L952.9 24.1 L960.0 23.7 L967.1 23.4 L974.1 23.1 L981.2 22.8 L988.2 22.5 L995.3 22.3 L1002.4 22.1 L1009.4 21.9 L1016.5 21.7 L1023.5 21.5 L1030.6 21.4 L1037.6 21.2 L1044.7 21.1 L1051.8 21.0 L1058.8 20.8 L1065.9 20.7 L1072.9 20.6 L1080.0 20.5 L1087.1 20.4 L1094.1 20.3 L1101.2 20.3 L1108.2 20.2 L1115.3 20.1 L1122.4 20.0 L1129.4 20.0 L1136.5 19.9 L1143.5 19.8 L1150.6 19.8 L1157.6 19.7 L1164.7 19.7 L1171.8 19.6 L1178.8 19.6 L1185.9 19.5 L1192.9 19.5 L1200.0 19.4"/>
+    </svg>
+    <figcaption id="trace-cap">
+      Transmission through a flux-biased asymmetric SQUID. The two dips sit at
+      different frequencies depending on which way the signal travels &mdash; that
+      asymmetry is the diode.
+    </figcaption>
+  </figure>
+</header>
+
+<nav class="sectionnav" aria-label="Sections">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#press">Press</a></li>
+    <li><a href="#earlier">Earlier work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <section id="about" class="section">
+    <h2 class="section__title">About</h2>
+    <div class="about">
+      <img class="portrait"
+           src="images/profile_picture_400.jpg"
+           srcset="images/profile_picture_400.jpg 400w, images/profile_picture_800.jpg 800w"
+           sizes="(max-width: 700px) 140px, 200px"
+           width="200" height="200"
+           alt="Portrait of Nicolas Dirnegger">
+      <div class="about__text">
+        <p>
+          I am a PhD candidate in Electrical and Computer Engineering at UCLA, advised by
+          Prof. Prineha Narang, expecting to defend in January 2027. My work sits on the seam
+          between superconducting qubit hardware and quantum information theory: I design and
+          measure circuit QED devices, then build the models that predict how those devices
+          behave once they are connected to each other.
+        </p>
+        <p>
+          Two threads run through it. The first is nonreciprocity on chip &mdash; using
+          superconducting diodes as a coherent, direction-dependent element for two-qubit gates.
+          The second is what happens when you leave the fridge: transduction to optical photons,
+          entanglement distillation across lossy channels, and routing protocols for distributing
+          multipartite entanglement over a real network.
+        </p>
+        <p>
+          I have worked at IBM Quantum on optical links between superconducting processors, at
+          AFRL, and most recently at Nokia Bell Labs on polarization-entangled photon distribution
+          and teleportation over fiber at telecom wavelengths.
+        </p>
+        <p>
+          Before UCLA I completed a BSc in Electrical Engineering at ETH Z&uuml;rich, where I worked on
+          silicon nitride grating couplers for photonic integrated circuits, and an MSc in Physics
+          at UCLA focused on mesoscopic optics and quantum electronics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <h2 class="section__title">Publications &amp; preprints</h2>
+    <ol class="pubs">
+
+      <li class="pub">
+        <p class="pub__year">2026</p>
+        <div class="pub__body">
+          <h3><a href="https://doi.org/10.1103/hxgh-d9sc" target="_blank" rel="noopener noreferrer">Probing time-reversal-symmetry breaking using a nonlinear superconducting ring resonator</a></h3>
+          <p class="pub__authors"><b>N. Dirnegger</b>, M. Wesson, A. Arora, I. Petrides, J. B. Curtis, E. M. Been, A. Yacoby, P. Narang</p>
+          <p class="pub__meta"><span class="tag tag--award">Editors&rsquo; Suggestion</span> <span class="mono">Phys. Rev. A 113, 062402 (2026)</span> <span class="mono">&middot; Open access</span></p>
+          <p class="pub__note">A multimode ring resonator whose own nonlinear cross-mode interactions act as a built-in amplifier. Driving a two-mode circuit with self- and cross-Kerr nonlinearities near the bifurcation threshold forces the photon populations into a symmetric configuration &mdash; which then breaks measurably under even weak time-reversal-symmetry breaking in a coupled quantum material.</p>
+        </div>
+      </li>
+      <li class="pub">
+        <p class="pub__year">2026</p>
+        <div class="pub__body">
+          <h3><a href="https://arxiv.org/abs/2605.03946" target="_blank" rel="noopener noreferrer">An extensive theory of nonlinearly intercoupled pseudomodes for noise model reduction in circuit QED</a></h3>
+          <p class="pub__authors">M. G. Boada G., <b>N. Dirnegger</b>, A. Delgado, P. Narang</p>
+          <p class="pub__meta"><span class="tag">Under review &middot; Physical Review A</span> <span class="mono">arXiv:2605.03946</span></p>
+          <p class="pub__note">Garraway's pseudomode construction, generalized to nonlinearly intercoupled auxiliary modes, so that a dissipative environment around a Josephson nonlinearity can be reduced without hiding the approximation.</p>
+        </div>
+      </li>
+      <li class="pub">
+        <p class="pub__year">2025</p>
+        <div class="pub__body">
+          <h3><a href="https://arxiv.org/abs/2511.20758" target="_blank" rel="noopener noreferrer">Nonreciprocal quantum information processing with superconducting diodes in circuit quantum electrodynamics</a></h3>
+          <p class="pub__authors"><b>N. Dirnegger</b>, P. Narang, A. Arora</p>
+          <p class="pub__meta"><span class="tag">Under review &middot; npj Quantum Information</span> <span class="mono">arXiv:2511.20758</span></p>
+          <p class="pub__note">An asymmetric SQUID, flux-biased into a superconducting diode, gives direction-dependent resonance shifts in transmission &mdash; and from there, coherent nonreciprocal qubit&ndash;qubit coupling.</p>
+        </div>
+      </li>
+      <li class="pub">
+        <p class="pub__year">2025</p>
+        <div class="pub__body">
+          <h3><a href="https://arxiv.org/abs/2503.10842" target="_blank" rel="noopener noreferrer">Distilled remote entanglement between superconducting qubits across optical channels</a></h3>
+          <p class="pub__authors"><b>N. Dirnegger</b>, M. Malekakhlagh, V. Siddhu, A. Rao, C. Xiong, M. Kumph, J. Orcutt, A. Falk</p>
+          <p class="pub__meta"><span class="tag tag--quiet">IBM Quantum</span> <span class="mono">arXiv:2503.10842</span></p>
+          <p class="pub__note">Monte Carlo simulation mapping transducer device specs onto system-level channel performance. Extreme photon loss distillation performs best; today's transducers sit right at the 50% Bell-pair fidelity threshold.</p>
+          <img class="pub__fig" src="images/remote_entanglement.png" alt="Diagram of remote entanglement distribution between superconducting qubit modules over optical channels" loading="lazy">
+        </div>
+      </li>
+      <li class="pub">
+        <p class="pub__year">2024</p>
+        <div class="pub__body">
+          <h3><a href="https://arxiv.org/abs/2408.07118" target="_blank" rel="noopener noreferrer">Efficient multiparty entanglement distribution with the DODAG-X protocol</a></h3>
+          <p class="pub__authors">R. Negrin, <b>N. Dirnegger</b>, W. Munizzi, J. Talukdar, P. Narang</p>
+          <p class="pub__meta"><span class="tag">Under review &middot; IEEE Trans. Quantum Engineering</span> <span class="mono">arXiv:2408.07118</span></p>
+          <p class="pub__note">Routing multipartite entanglement over destination-oriented directed acyclic graphs, which cuts graph verification and path-finding overhead sharply on grid-lattice and small-world topologies.</p>
+          <img class="pub__fig" src="images/dodag_x.png" alt="Diagram of the DODAG-X entanglement routing protocol on a network graph" loading="lazy">
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section id="press" class="section">
+    <h2 class="section__title">In the press</h2>
+    <ul class="pubs">
+
+      <li class="pub">
+        <p class="pub__year">Dec 2025</p>
+        <div class="pub__body">
+          <h3><a href="https://thequantuminsider.com/2025/12/01/one-way-or-another-ucla-researchers-report-on-chip-diode-could-simplify-quantum-processor-architecture/" target="_blank" rel="noopener noreferrer">One way or another: UCLA researchers report on-chip diode could simplify quantum processor architecture</a></h3>
+          <p class="pub__authors">The Quantum Insider &middot; Matt Swayne</p>
+          <p class="pub__meta"><span class="tag tag--quiet">Superconducting diodes</span></p>
+          <p class="pub__note">A feature focused on what chip-level nonreciprocity would mean for architecture: today&rsquo;s processors depend on ferrite circulators and isolators that are physically larger than the chips they protect and must be mounted off-chip inside the fridge, capping how many qubits can be wired to the coldest stage. The piece walks through the direction-dependent resonance shift, the directional half-iSWAP gate, and the selective Bell-state generation that follows.</p>
+        </div>
+      </li>
+
+      <li class="pub">
+        <p class="pub__year">Nov 2025</p>
+        <div class="pub__body">
+          <h3><a href="https://quantumzeitgeist.com/quantum-superconducting-diodes-enable-nonreciprocal-information-processing-tunable-bell/" target="_blank" rel="noopener noreferrer">Superconducting diodes enable nonreciprocal quantum information processing with tunable Bell-state generation</a></h3>
+          <p class="pub__authors">Quantum Zeitgeist &middot; Muhammad Rohail T.</p>
+          <p class="pub__meta"><span class="tag tag--quiet">Superconducting diodes</span></p>
+          <p class="pub__note">Coverage emphasising the route from a flux-controlled asymmetric SQUID to one-way signal routing, and the prospect of building modular processors with less cryogenic wiring and a smaller footprint.</p>
+        </div>
+      </li>
+
+      <li class="pub">
+        <p class="pub__year">May 2025</p>
+        <div class="pub__body">
+          <h3><a href="https://quantumzeitgeist.com/superconducting-resonators-detect-time-reversal-symmetry-in-exotic-matter-states/" target="_blank" rel="noopener noreferrer">Superconducting resonators detect time-reversal symmetry in exotic matter states</a></h3>
+          <p class="pub__authors">Quantum Zeitgeist &middot; Dr. Donovan</p>
+          <p class="pub__meta"><span class="tag tag--quiet">Ring resonator &amp; TRSB</span></p>
+          <p class="pub__note">On the ring-resonator proposal, and why self- and cross-Kerr nonlinearities make the imaginary part of the coupling a measurable signature of broken time-reversal symmetry &mdash; a microwave resonator repurposed from readout hardware into a probe of exotic order.</p>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="earlier" class="section">
+    <h2 class="section__title">Earlier work</h2>
+
+    <div class="pub">
+      <p class="pub__year">2022</p>
+      <div class="pub__body">
+        <h3>Efficient silicon nitride grating couplers</h3>
+        <p class="pub__authors">BSc thesis &middot; Institute of Electromagnetic Fields, ETH Z&uuml;rich</p>
+        <p class="pub__meta">Supervised by Prof. J&uuml;rg Leuthold, Manuel Kohli and Boris Vukovic</p>
+        <p class="pub__note">
+          Silicon nitride is an attractive platform for photonic integrated circuits &mdash; low
+          propagation loss, CMOS compatible, tolerant of high input power &mdash; but getting light
+          from a fiber into a micron-scale waveguide is the bottleneck. I demonstrated a
+          SiN grating coupler with under 0.5&nbsp;dB coupling loss using a back reflector, and a
+          40&nbsp;nm 1&nbsp;dB bandwidth using amorphous silicon overlay gratings. The work was later
+          published by my supervisor Dr. Manuel Kohli and his team in
+          <a href="https://doi.org/10.1021/acsphotonics.3c00834" target="_blank" rel="noopener noreferrer">ACS Photonics</a>.
+        </p>
+        <img class="pub__fig" src="images/grating_coupler.png" alt="Cross-section of a silicon nitride grating coupler design" loading="lazy">
+      </div>
+    </div>
+
+    <div class="pub">
+      <p class="pub__year">2018</p>
+      <div class="pub__body">
+        <h3>Creating a GenEARator</h3>
+        <p class="pub__authors">Christina Henzinger &amp; <b>Nicolas Dirnegger</b> &middot; Vienna</p>
+        <p class="pub__meta"><span class="tag tag--quiet">First place, Vienna science fair</span></p>
+        <p class="pub__note">
+          A secondary-school project: generating electricity from the heat emitted by human ears.
+          We built Peltier tiles into the earpieces of a headset, with body heat on the inner face
+          and cold air on the outer, and worked through which tile to use, how to stop the two sides
+          thermalising, and whether to wire the tiles in series or parallel. It produced enough
+          power to light an LED, and won the Vienna science fair in 2018. Kinder-KURIER covered it as
+          <a href="https://kurier.at/kiku/strom-aus-der-waerme-von-kopfhoerern/400032358" target="_blank" rel="noopener noreferrer">&ldquo;Strom aus der W&auml;rme von Kopfh&ouml;rern&rdquo;</a>.
+          It is the earliest thing on this page, and not unrelated to the rest of it: a small
+          temperature difference, carefully harvested.
+        </p>
+        <img class="pub__fig" src="images/sciencefair.png" alt="The thermoelectric headphones science fair project" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section__title">Contact</h2>
+    <p class="contact__lead">
+      Happy to hear from you about collaborations, positions, or anything in the papers above.
+      Direct email is <a href="mailto:nickeyd01@ucla.edu">nickeyd01@ucla.edu</a>, or use this form.
+    </p>
+    <form class="form" action="https://formspree.io/f/xpwpyqye" method="POST">
+      <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="_replyto" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <button type="submit">Send message</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p class="mono">Los Angeles, CA &middot; Last updated August 2026</p>
+</footer>
+
+</body>
 </html>
