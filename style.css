@@ -112,22 +112,53 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- signature: the transmission trace ---------- */
 .trace { margin-top: clamp(2.5rem, 6vw, 4rem); }
-.trace svg { display: block; width: 100%; height: clamp(90px, 14vw, 150px); }
+.trace svg { display: block; width: 100%; height: auto; max-height: 200px; }
 
-.trace__line {
+.trace svg .d-line,
+.trace svg .d-ring,
+.trace svg .d-jj,
+.trace svg .d-vec,
+.trace svg .d-faint,
+.trace svg .d-mesh,
+.trace svg .d-arrow {
   fill: none;
   stroke: var(--signal);
-  stroke-width: 2.5;
   vector-effect: non-scaling-stroke;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-dasharray: 2600;
-  stroke-dashoffset: 2600;
-  animation: sweep 2.2s cubic-bezier(.2,.7,.3,1) .25s forwards;
 }
-@keyframes sweep { to { stroke-dashoffset: 0; } }
+.trace svg .d-line   { stroke-width: 2.2; }
+.trace svg .d-ring   { stroke-width: 2.2; }
+.trace svg .d-jj     { stroke-width: 2.6; }
+.trace svg .d-vec    { stroke-width: 2.6; }
+.trace svg .d-arrow  { stroke-width: 2.2; opacity: .45; }
+.trace svg .d-faint  { stroke-width: 1.4; opacity: .40; }
+.trace svg .d-mesh   { stroke-width: 1; opacity: .34; }
+.trace svg .d-solid  { fill: var(--signal); stroke: none; opacity: .16; }
+.trace svg .d-dot    { fill: var(--signal); stroke: none; }
+
+/* staggered fade-in, left to right */
+.trace svg > * {
+  opacity: 0;
+  animation: rise .7s ease forwards;
+}
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.trace svg > *:nth-child(-n+3)  { animation-delay: .15s; }
+.trace svg > *:nth-child(n+4)   { animation-delay: .35s; }
+.trace svg > *:nth-child(n+9)   { animation-delay: .55s; }
+.trace svg > *:nth-child(n+33)  { animation-delay: .75s; }
+.trace svg .d-mesh  { animation-delay: .55s; }
+.trace svg .d-faint,
+.trace svg .d-vec,
+.trace svg .d-dot   { animation-delay: .8s; }
+.trace svg .d-solid { opacity: 0; animation: riseSolid .7s ease .35s forwards; }
+@keyframes riseSolid { from { opacity: 0; transform: translateY(6px); } to { opacity: .16; transform: none; } }
 @media (prefers-reduced-motion: reduce) {
-  .trace__line { stroke-dashoffset: 0; animation: none; }
+  .trace svg > * { opacity: 1; animation: none; }
+  .trace svg .d-solid { opacity: .16; animation: none; }
+  .trace svg .d-arrow { opacity: .45; }
+  .trace svg .d-faint { opacity: .40; }
+  .trace svg .d-mesh  { opacity: .34; }
 }
 
 .trace figcaption {
